@@ -7,5 +7,5 @@ form.addEventListener('submit', function(event) {
 	if (!url.startsWith('http://') && !url.startsWith('https://')) {
 		url = 'https://' + url;
 	}
-	window.location.href = url;
+	window.open(url, '_blank');
 });
